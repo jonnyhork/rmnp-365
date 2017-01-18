@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css?family=Just+Me+Again+Down+Here');
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+
+/*this will keep floating elements inside of thier parent element: https://css-tricks.com/box-sizing/*/
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/Users/jonnyhork/Desktop/galvanize/js-workshop/week1/project/rmnp-winter-lake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 50px auto 0;
+}
+
+main {
+    padding: 20px;
+    background: rgba(256, 265, 256, .25);
+    position: fixed;
+    max-width: 600px;
+    margin-top: 64px;
+    bottom: 200px;
+
+
+}
+
+header {
+    color: #201e22;
+    padding: 20px;
+}
+
+h1 {
+    width: 50%;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    float: left;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Just Me Again Down Here', cursive;
+}
+
+h4{
+  padding-top: 12px;
+  font-family: 'Calligraffitti', cursive;
+  font-weight:600;
+}
+
+p {
+    color: black;
+    font-size: 29px;
+    font-family: 'Just Me Again Down Here', cursive;
+
+}
+
+nav {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+nav a {
+    color: #201e22;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+footer {
+    padding: 20px;
+    background: rgba(256, 265, 256, .25);
+    position: fixed;
+    bottom: 0;
+}
+
+footer, span {
+    color: #201e22;
+    text-decoration: none;
+    margin-right: 20px;
+    float: left;
+    padding-right: 34px;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+}
