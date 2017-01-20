@@ -9,16 +9,21 @@
 }
 
 body {
-    background-image: url(/Users/jonnyhork/Desktop/galvanize/js-workshop/week1/project/rmnp-winter-lake.jpg);
+    background-image: url(rmnp-winter-lake.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
-
+#xmark{
+  font-size: 20px;
+  font-family: sans-serif;
+  float: right;
+}
 .wrapper {
     width: 1000px;
     margin: 50px auto 0;
 }
+
 
 main {
     padding: 20px;
@@ -27,8 +32,6 @@ main {
     max-width: 600px;
     margin-top: 64px;
     bottom: 200px;
-
-
 }
 
 header {

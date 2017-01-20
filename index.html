@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css" />
 </head>
+<style>
+main {
+  display: none;
+}
+#xmark:hover + main {
+  display: block;
+}
+</style>
 
 <body>
     <div class="wrapper">
@@ -17,7 +25,8 @@
                 <a href="summer.html">Summer</a>
             </nav>
         </header>
-        <main>
+<span id="xmark">X</span>
+          <main>
             <h2>RMNP 365</h2>
 
             <p>Most people would say that Rocky Mountain National Park is out of season in the winter.
@@ -28,6 +37,7 @@
                 <h4>― Henry David Thoreau, Walden: Or, Life in the Woods<h4>
           </p>
       </main>
+
       <footer class="wrapper">
         Photo by Carlo Traversi
         <span class="group">Quote from <a href="http://www.goodreads.com">www.goodreads.com</a></span>
